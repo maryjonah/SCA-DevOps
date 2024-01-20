@@ -1,1 +1,1 @@
-Back to the main branch and making updates in file named file_one.txt.
+On the branch git-third-branch but writing in a file named file_one.txt created on a main branch.

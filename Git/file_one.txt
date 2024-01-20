@@ -1,1 +1,1 @@
-On the branch git-sec-branch but writing in a file named file_one.txt created on a main branch.
+On the branch git-third-branch but writing in a file named file_one.txt created on a main branch.

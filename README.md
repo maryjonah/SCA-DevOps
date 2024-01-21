@@ -10,3 +10,7 @@ Bash script to request for student details, ensuring password is a minimum of 8 
 ### Task 2:
 Bash script to install nginx server from source code.  
 **[Solution](./Linux/Task-2/task2.sh)**
+
+
+2. ## Git
+TASKS: [Link to assignment](./Git/README.md)

@@ -1,0 +1,32 @@
+name: SCA GitHub Actions/ Docker workflow
+
+on:
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-test-push:
+    runs-on: ubuntu-latest
+    container: python:slim-buster
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install flask and pytest
+        run: python -m pip install flask pytest
+      
+      - name: Run test
+        run: pytest 
+
+      - name: Build image
+        run: docker build -t mary-cicd-task .
+      
+      - name: Docker login
+        env:
+          DOCKER_USER: ${{secrets.DOCKER_USERNAME}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+      - name: Push built image to DockerHub
+        run: docker push mary-cicd-task

@@ -18,6 +18,9 @@ jobs:
       
       - name: Run test
         run: pytest 
+      
+      - name: Install Docker Engine
+        uses: actions/setup-docker@        
 
       - name: Build image
         run: docker build -t mary-cicd-task .

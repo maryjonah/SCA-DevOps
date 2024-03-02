@@ -23,9 +23,9 @@ jobs:
       
       - name: Run test
         run: pytest 
-      
-      - name: Build image
-        run: docker build -t mary-cicd-task:latest .
-      
-      - name: Push built image to DockerHub
-        run: docker push mary-cicd-task:latest
+
+      - name: Build and push using prebuilt action
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: jonahmary17/sca-ci-cd:latest

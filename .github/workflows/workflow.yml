@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: jonahmary17/sca-ci-cd:latest
+          tags: jonahmary17/mary-sca-ci-cd:latest

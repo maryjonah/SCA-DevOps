@@ -25,7 +25,7 @@ jobs:
         run: pytest 
       
       - name: Build image
-        run: docker build -t mary-cicd-task:$(date +%s) .
+        run: docker build -t mary-cicd-task:latest .
       
       - name: Push built image to DockerHub
-        run: docker push mary-cicd-task:$(date +%s)
+        run: docker push mary-cicd-task:latest

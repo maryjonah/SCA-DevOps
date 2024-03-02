@@ -7,7 +7,6 @@ on:
 jobs:
   build-test-push:
     runs-on: ubuntu-latest
-    container: python:slim-buster
 
     steps:
       - name: Checkout

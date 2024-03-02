@@ -1,4 +1,4 @@
-from app.server import app
+from server import app
 
 def test_index_page():
     with app.test_client() as client:

@@ -1,6 +1,6 @@
 FROM python:slim-buster
 
-WORKDIR /app
+WORKDIR /
 
 RUN pip install flask
 

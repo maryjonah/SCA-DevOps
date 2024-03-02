@@ -28,4 +28,4 @@ jobs:
         run: docker build -t mary-cicd-task:latest .
       
       - name: Push built image to DockerHub
-        run: docker push mary-cicd-task:latest
+        run: docker push jonahmary17/mary-cicd-task:latest

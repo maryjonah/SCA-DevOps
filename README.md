@@ -13,4 +13,8 @@ Bash script to install nginx server from source code.
 
 
 2. ## Git
-TASKS: [Link to assignment](./Git/README.md)
+TASK: [Link to assignment](./Git/README.md)
+
+
+3. ## CICD
+TASK: [Link to assignment](./CICD/README.md)
